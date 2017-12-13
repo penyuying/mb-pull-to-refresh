@@ -1,11 +1,9 @@
-import BScroll, { BScrollStatic } from 'better-scroll';
-import { Type } from '@angular/core/src/type';
 
-export declare class PullToRefresh {
+export declare class PullToRefresh<T> {
 
-        public myIScroll:Type<BScroll>;
+        public myIScroll:T;
 
-        constructor(el:Element|string, options, IScroll:BScrollStatic);
+        constructor(el:Element|string, options, IScroll:any);
         /**
          *初始化上拉加载
         */
