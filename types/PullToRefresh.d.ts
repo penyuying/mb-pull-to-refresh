@@ -1,9 +1,9 @@
 
-export declare class PullToRefresh<T> {
+export declare class PullToRefresh<T,TB=any> {
 
         public myIScroll:T;
 
-        constructor(el:Element|string, options, IScroll:any);
+        constructor(el:Element|string, options:IPullToRefreshOptions<TB>, IScroll:any);
         /**
          *初始化上拉加载
         */
@@ -48,4 +48,26 @@ export declare class PullToRefresh<T> {
          * @param {Number} time 结束时隐藏节点的动画时间
          */
         pullDownfinish(time:number):void;
+}
+
+/**
+ * 上拉加载下拉刷新
+ *
+ * @export
+ * @interface IPullToRefreshOptions
+ */
+export interface IPullToRefreshOptions<T> {
+    sleep?: Number; // 等待完成时间
+    pullDownHeight?: Number;
+    pullUpDistance?: Number; // 距离底部触发下拉的距离
+    pullDownTextEl?: string; // 下拉显示文字的节点
+    isPullDown?: Boolean; // 是否启用下拉刷新效果
+    isPullUp?: Boolean; // 是否启用上拉加载效果
+    pullUpAutoInit?: Boolean; // 自动初始化上拉加载效果
+    pullDownAutoInit?: Boolean; // 自动初始化下拉刷新效果
+    iScroll?: T; // IScroll参数
+    pullUpCallback?: Function ; // 上拉回调
+    scrollUpCallback?: Function ; // 滚动条向上滚动时的回调
+    scrollDownCallback?: Function; // 滚动条向下滚动回调position：为当前移动位置
+    isA?: boolean; // true使用AScroll;false使用BScroll
 }
