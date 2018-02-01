@@ -45,7 +45,7 @@
         _this._bind();
   }
 
-  _PullDown.prototype = {
+  PullToRefresh.prototype = {
 
         /**
          * 合并对象

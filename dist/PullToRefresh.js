@@ -1,5 +1,5 @@
 /*!
- * mb-pull-to-refresh v1.0.2
+ * mb-pull-to-refresh v1.0.5
  * (c) 2017-2018 penyuying
  * Released under the MIT License.
  */
@@ -56,7 +56,7 @@ function PullToRefresh(el, options, IScroll) {
     _this._bind();
 }
 
-_PullDown.prototype = {
+PullToRefresh.prototype = {
 
     /**
      * 合并对象
