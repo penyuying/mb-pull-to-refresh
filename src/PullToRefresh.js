@@ -1,4 +1,4 @@
-var _PullToRefresh = (function (win) {
+// var _PullToRefresh = (function (win) {
   /**
    * 下拉刷新上拉加载更多
    * @class
@@ -6,7 +6,7 @@ var _PullToRefresh = (function (win) {
    * @param {Object} options 选项
    * @param {Function} IScroll IScroll方法
    */
-    function _PullDown(el, options, IScroll) {
+    export function PullToRefresh(el, options, IScroll) {
         var _this = this;
         _this.el = _this._getEl(el);
         if (!_this.el || !IScroll) {
@@ -672,9 +672,9 @@ var _PullToRefresh = (function (win) {
         }
     };
 
-    win.PullDown = _PullDown;
+//     win.PullDown = _PullDown;
 
-    return _PullDown;
-})(window);
+//     return _PullDown;
+// })(window);
 
-export var PullToRefresh = _PullToRefresh;
+// export var PullToRefresh = _PullToRefresh;
