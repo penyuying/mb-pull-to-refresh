@@ -1,6 +1,6 @@
 {
   "name": "mb-pull-to-refresh",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "上拉加载，下拉刷新",
   "main": "./dist/PullToRefresh.min.js",
   "scripts": {
