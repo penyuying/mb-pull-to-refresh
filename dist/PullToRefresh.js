@@ -1,5 +1,5 @@
 /*!
- * mb-pull-to-refresh v1.0.6
+ * mb-pull-to-refresh v1.0.7
  * (c) 2017-2018 penyuying
  * Released under the MIT License.
  */
@@ -636,7 +636,7 @@ PullToRefresh.prototype = {
             if (!_this._downLock) {
                 _this._setNodeHeight(_this._domDown, 0);
             }
-            if (_options.iScroll && _options.iScroll.mouseWheel && _myIScroll.firstWheelOpreation) {
+            if (_options.iScroll && _options.iScroll.mouseWheel) {
                 _setTouchEnd();
             }
         });

@@ -640,7 +640,7 @@
                 if (!_this._downLock) {
                     _this._setNodeHeight(_this._domDown, 0);
                 }
-                if(_options.iScroll && _options.iScroll.mouseWheel && _myIScroll.firstWheelOpreation) {
+                if(_options.iScroll && _options.iScroll.mouseWheel) {
                     _setTouchEnd();
                 }
             });
